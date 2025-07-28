@@ -10,7 +10,7 @@ export async function dbConnect() {
         });
         connection.on('error', (err) => {
             console.log("Database connection error:",err)
-            process.exit(1); // Exit the process if there's an error
+            process.exit(1); // Exit the process if there's an error    
         });
         connection.on('disconnected', () => {
             console.log("Database disconnected");
